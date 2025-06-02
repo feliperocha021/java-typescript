@@ -1,9 +1,10 @@
+"use strict";
 function printStaus(message, code) {
     if (typeof code === 'string') { /* é necessário, pois number não possuir a função trim() */
-        console.log("".concat(message, ". Status code: ").concat(code.trim()));
+        console.log(`${message}. Status code: ${code.trim()}`);
     }
     else {
-        console.log("".concat(message, ". Status code: ").concat(code));
+        console.log(`${message}. Status code: ${code}`);
     }
 }
 printStaus('User created', ' 200 ');
@@ -24,9 +25,9 @@ console.log(roleMessage('admin')); // Output: You have admin privileges.
 console.log(roleMessage('user')); // Output: You are a registered user.
 console.log(roleMessage('guest')); // Output: You are a guest.
 function printUser(user) {
-    console.log("User: ".concat(user.firstName, " ").concat(user.lastName, ", Age: ").concat(user.age, ", Role: ").concat(user.role));
+    console.log(`User: ${user.firstName} ${user.lastName}, Age: ${user.age}, Role: ${user.role}`);
 }
-var user = {
+let user = {
     firstName: 'John',
     lastName: 'Doe',
     age: 30,

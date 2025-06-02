@@ -1,22 +1,22 @@
-var person = ['John', 30]; //(string | number)[];  
+"use strict";
+let person = ['John', 30]; //(string | number)[];  
 person.push('male');
 //person.push(true) error de tipagem
-var person2;
-var array = [person2 = {
+let person2;
+let array = [person2 = {
         name: 'John',
     }, true, 1999];
-var person3;
+let person3;
 array.push(person3 = { name: 'Mark' });
 console.log(array); // [ { name: 'John' }, true, 1999, { name: 'Mark' } ]
 console.log(array[0]); // John
 // console.log(array[0].name); // error
-var things = [];
+let things = [];
 things.push(true);
 things.push({ name: 'John' });
 things.push(person3);
 console.log(things); // [ true, { name: 'John' }, { name: 'Mark' } ]
-for (var _i = 0, things_1 = things; _i < things_1.length; _i++) {
-    var thing = things_1[_i];
+for (let thing of things) {
     if (typeof things === 'boolean') {
         console.log(thing); // true
     }

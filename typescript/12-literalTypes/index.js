@@ -1,6 +1,7 @@
+"use strict";
 // O valor que atribui o tipo literal a uma variável é o valor que ela recebe.
-var srt = 'Hello World';
-var srt2 = 'Hello World';
+const srt = 'Hello World';
+let srt2 = 'Hello World';
 console.log(typeof srt); // Output: string
 console.log(typeof srt2); // Output: string
 function roleMessage(role) {

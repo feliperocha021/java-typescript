@@ -1,18 +1,19 @@
+"use strict";
 // Usado para especificar que um parâmetro de função pode ser de mais de um tipo ou o retorno pode ser um dos vários tipos	
-var user;
+let user;
 function getUser() {
-    var uname = 'John Doe';
-    var uage = 30;
+    const uname = 'John Doe';
+    const uage = 30;
     user = { name: uname, age: uage };
     return user;
 }
 console.log(getUser());
 function printStaus(message, code) {
-    if (typeof code === 'string') {
-        console.log("".concat(message, ". Status code: ").concat(code.trim()));
+    if (typeof code === 'string') { /* é necessário, pois number não possuir a função trim() */
+        console.log(`${message}. Status code: ${code.trim()}`);
     }
     else {
-        console.log("".concat(message, ". Status code: ").concat(code));
+        console.log(`${message}. Status code: ${code}`);
     }
 }
 printStaus('User created', ' 200 ');

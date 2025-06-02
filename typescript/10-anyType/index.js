@@ -1,8 +1,9 @@
-var dynamic;
+"use strict";
+let dynamic;
 dynamic = 10;
 dynamic = 'Hello, World!';
-var arr = [];
+let arr = [];
 arr = [1, 'two', true, { key: 'value' }];
-var test;
+let test;
 console.log(typeof test); // undefined
 console.log(test); // undefined
