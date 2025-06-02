@@ -1,3 +1,5 @@
+// npx tsc arquivo.ts --w ativa a compilação automática
+// npx tsc --init cria o arquivo tsconfig.json
 ## * & **
 - * Representa qualquer nome de arquivo dentro de um diretório específico. Exemplo: "src/*.ts" seleciona todos os arquivos .ts dentro de src/, mas não inclui subdiretórios.
 
