@@ -18,13 +18,32 @@ function doHomeWork(subject, callback) {
     console.log(`Starting my ${subject} homework`);
     callback();
 }
-function completeHomeWork() {
-    console.log('Homework completed');
+function statusHomeWork(status) {
+    console.log(`Homework ${status}`);
 }
-doHomeWork('math', completeHomeWork); // chama a função doHomeWork com o assunto 'math' e a função completeHomeWork como callback
+
+/* Contexto (this): O primeiro argumento de bind() é o contexto que a função deve usar quando for executada. No caso, null é passado como contexto, o que significa que a função não precisa deles ou não dependerá de this.
+
+Pré-definição do Parâmetro: O segundo argumento, 'completed', é o valor que será sempre passado como primeiro parâmetro para a função statusHomeWork.
+ */
+doHomeWork('math', statusHomeWork.bind(null, 'completed')); // chama a função doHomeWork com o assunto 'math' e a função completeHomeWork como callback
 
 // uma função anônima é uma função que não tem nome e é definida no local onde é usada. Ela pode ser usada como uma função de retorno de chamada ou como uma função de ordem superior.
 //só pode ser chamada dentro do escopo onde foi definida, ou seja, não pode ser chamada fora da função que a define.
 doHomeWork('english', function() {
     console.log('English homework completed');
 }); // chama a função doHomeWork com o assunto 'english' e uma função anônima como callback
+
+//Exemplo usando o primeiro argumento de bind
+const usuario = {
+  nome: 'Felipe',
+  cumprimentar: function(saudacao, pontuacao) {
+    console.log(saudacao + ', ' + this.nome + pontuacao);
+  }
+};
+
+// Sem bind, 'this' dentro de cumprimentar não seria o objeto 'usuario', a função é chamada como uma função comum, não como um método do objeto usuario
+setTimeout(usuario.cumprimentar, 1000); // Pode imprimir "undefined"
+
+// Com bind, fixamos o contexto e pré-definimos o parâmetro saudacao
+setTimeout(usuario.cumprimentar.bind(usuario, 'Olá'), 1000); // Imprime "Olá, Felipe"
