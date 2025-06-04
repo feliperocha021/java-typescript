@@ -8,3 +8,4 @@ function display(msg: string, result: number): void {
 }
 
 getResult(5, 10, display);
+export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

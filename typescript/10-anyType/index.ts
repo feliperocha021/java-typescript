@@ -8,3 +8,4 @@ arr = [1, 'two', true, { key: 'value' }];
 let test;
 console.log(typeof test); // undefined
 console.log(test); // undefined
+export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

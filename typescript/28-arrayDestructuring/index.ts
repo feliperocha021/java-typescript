@@ -6,5 +6,4 @@ const person = ['John', 'Smith', 28];
 const [fname, lname, age] = person;
 console.log(fname, lname, age);
 
-
 export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

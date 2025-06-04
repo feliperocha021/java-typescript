@@ -20,3 +20,4 @@ const user  = {
 if (user.role === Roles.ADMIN) {
     console.log('User is an admin');
 }
+export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

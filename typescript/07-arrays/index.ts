@@ -35,3 +35,4 @@ for (let thing of things) {
         console.log(thing); // Mark
     }
 }
+export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
