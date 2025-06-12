@@ -1,6 +1,6 @@
 "use strict";
 
-var user = {
+const user = {
     name: 'Jhon',
     age: 28,
     gender: 'male',
@@ -8,8 +8,9 @@ var user = {
 };
 // o nome da varável tem que corresponder com o nome da propriedade do objeto
 // caso contrário será atribuido undefined
-var name = user.name, city = user.city, age = user.age, gender = user.gender;
+const { name, city, age, gender } = user;
 console.log(name, city, age, gender);
 // para que ele receba uma variável com nome diferente
-var pnome = user.name, idade = user.age;
+const { name: pnome, age: idade } = user;
 console.log(pnome, idade);
+exports.default = undefined;

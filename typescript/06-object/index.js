@@ -1,4 +1,5 @@
 "use strict";
+
 let person = {
     name: "John",
     age: 30
@@ -6,7 +7,7 @@ let person = {
 person = { name: "Jane", age: 22, /* gender: female */ }; // a adição da propriedade gender que não foi inicialmente definida não é permitida e além disso todas as propriedades não opcionais devem ser definidas
 console.log(person.name); //John
 console.log(person['name']); //John
-console.log(person[0]); //undefined
+// console.log(person[0]) //undefined
 let person2 = {
     name: "John",
     age: 30
@@ -29,4 +30,6 @@ let person5 = {
 };
 console.log(person5.address.city); // New York
 console.log(person5['address']['city']); // New York
-console.log(person5['0']['city']); // error
+// console.log(person5['0']['city']) // error
+exports.default = undefined;
+// serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

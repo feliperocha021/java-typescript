@@ -3,32 +3,32 @@
 // de um objeto e reforça a segurança de tipo
 // não tem constructor e não pode ser instanciado
 
-var user1 = {
+let user1 = {
     firstname: 'jhon',
     lastname: 'smith',
-    gretUser: function () {
+    gretUser() {
         console.log('Hello');
     },
-    getFullName: function () {
+    getFullName() {
         return this.firstname + ' ' + this.lastname;
     }
 };
-var Admin = /** @class */ (function () {
-    function Admin(f, l) {
+class Admin {
+    constructor(f, l) {
         this.firstname = f;
         this.lastname = l;
     }
-    Admin.prototype.gretUser = function () {
+    gretUser() {
         console.log('Hello Admin');
-    };
-    Admin.prototype.getFullName = function () {
+    }
+    getFullName() {
         return this.firstname + this.lastname;
-    };
-    return Admin;
-}());
+    }
+}
 // todas as classes que implentam a interface User podem usar essa fuunção
 function display(obj) {
     obj.gretUser();
 }
-var adm = new Admin('jhon', 'smith');
+let adm = new Admin('jhon', 'smith');
 display(adm);
+exports.default = undefined;

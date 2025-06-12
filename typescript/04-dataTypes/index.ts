@@ -15,4 +15,5 @@ console.log(Boolean(' ')) // true
 
 let isGreater = 10 > 5 // true
 console.log(isGreater)
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

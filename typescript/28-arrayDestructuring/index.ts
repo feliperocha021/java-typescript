@@ -16,4 +16,5 @@ console.log(primeroNome, segundoNome);
 const [pnome, snome, anos, gender = 'male'] = person;
 console.log(pnome, snome, anos, gender)
 
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

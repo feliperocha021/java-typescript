@@ -3,6 +3,7 @@
 // const READ_ONLY = 1;
 // const WRITE_ONLY = 2;
 // const READ_WRITE = 3;
+
 var Roles;
 (function (Roles) {
     Roles[Roles["ADMIN"] = 0] = "ADMIN";
@@ -19,3 +20,5 @@ const user = {
 if (user.role === Roles.ADMIN) {
     console.log('User is an admin');
 }
+exports.default = undefined;
+// serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

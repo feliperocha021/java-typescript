@@ -1,4 +1,5 @@
 "use strict";
+
 // O valor que atribui o tipo literal a uma variável é o valor que ela recebe.
 const srt = 'Hello World';
 let srt2 = 'Hello World';
@@ -20,3 +21,5 @@ console.log(roleMessage('admin')); // Output: You have admin privileges.
 console.log(roleMessage('user')); // Output: You are a registered user.
 console.log(roleMessage('guest')); // Output: You are a guest.
 //console.log(roleMessage('superuser')); // Error: Argument of type '"superuser"' is not assignable to parameter of type '"admin" | "user" | "guest"'.
+exports.default = undefined;
+// serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

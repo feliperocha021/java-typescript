@@ -8,4 +8,5 @@ Compilador do TypeScript p/ javascript: npm install typescript --save-dev
 */
 
 console.log('Hello, World!')
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

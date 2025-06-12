@@ -1,59 +1,41 @@
 "use strict";
 // protected permite que a propriedade seja acessada pelos filhos
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 
-var Person = /** @class */ (function () {
-    function Person(name, dob, gender) {
+class Person {
+    constructor(name, dob, gender) {
         this.name = name;
         this.dob = dob;
         this.gender = gender;
     }
-    Person.prototype.calculateAge = function () {
+    calculateAge() {
         console.log('Age Person');
         return new Date().getFullYear() - new Date(this.dob).getFullYear();
-    };
-    return Person;
-}());
-var Employee = /** @class */ (function (_super) {
-    __extends(Employee, _super);
-    function Employee(n, dob, gen, salary, baseLocation, isEligible, hikePercent) {
-        var _this = _super.call(this, n, dob, gen) || this;
-        _this.salary = salary;
-        _this.baseLocation = baseLocation;
-        _this.isEligible = isEligible;
-        _this.hikePercent = hikePercent;
-        return _this;
     }
-    Employee.prototype.calculateAge = function () {
+}
+class Employee extends Person {
+    constructor(n, dob, gen, salary, baseLocation, isEligible, hikePercent) {
+        super(n, dob, gen);
+        this.salary = salary;
+        this.baseLocation = baseLocation;
+        this.isEligible = isEligible;
+        this.hikePercent = hikePercent;
+    }
+    calculateAge() {
         console.log('Age Employee');
         return 2025 - new Date(this.dob).getFullYear();
-    };
-    Employee.prototype.getSalary = function () {
+    }
+    getSalary() {
         if (this.isEligible) {
             return this.getNewsalary();
         }
         return this.salary;
-    };
-    Employee.prototype.getNewsalary = function () {
+    }
+    getNewsalary() {
         return this.salary + this.salary * this.hikePercent / 100;
-    };
-    return Employee;
-}(Person));
-var emp = new Employee('jhon', '08-30-1991', 'male', 10000, 'london', true, 20);
+    }
+}
+const emp = new Employee('jhon', '08-30-1991', 'male', 10000, 'london', true, 20);
 console.log(emp);
 console.log(emp.getSalary());
 console.log(emp.calculateAge());
+exports.default = undefined;

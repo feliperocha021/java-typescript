@@ -3,7 +3,8 @@
 // de um objeto e reforça a segurança de tipo
 // não tem constructor e não pode ser instanciado
 
-var add1;
-add1 = function (x, y) { return x + y; };
-var add2;
-add2 = function (x, y) { return x + y; };
+let add1;
+add1 = (x, y) => x + y;
+let add2;
+add2 = (x, y) => x + y;
+exports.default = undefined;

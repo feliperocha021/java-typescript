@@ -3,30 +3,30 @@
 // de um objeto e reforça a segurança de tipo
 // não tem constructor e não pode ser instanciado
 
-var Admin = /** @class */ (function () {
-    function Admin(f, l, lo) {
+class Admin {
+    constructor(f, l, lo) {
         this.company = 'microsoft';
         this.location = 'london';
         this.firstname = f;
         this.lastname = l;
         this.location = lo !== null && lo !== void 0 ? lo : this.location;
     }
-    Admin.prototype.gretUser = function () {
+    gretUser() {
         console.log('Hello Admin');
-    };
-    Admin.prototype.getFullName = function () {
+    }
+    getFullName() {
         return this.firstname + this.lastname;
-    };
-    Admin.prototype.getRole = function () {
+    }
+    getRole() {
         return 'Admin';
-    };
-    return Admin;
-}());
+    }
+}
 //Se atribuir o tipo Admin o readonly não funciona
-var adm1;
+let adm1;
 adm1 = new Admin('jhon', 'smith');
 // adm1.company = 'sei lá' error
-var adm2;
+let adm2;
 adm2 = new Admin('mark', 'jane', 'new york');
 adm2.company = 'readonly não funciona';
 console.log(adm1, adm2, adm1.getRole());
+exports.default = undefined;

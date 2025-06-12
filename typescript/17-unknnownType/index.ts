@@ -14,4 +14,5 @@ uname = notUsed; // Não deveria aceitar, mas aceita porque `any` permite qualqu
 inputVal = 5;
 
 console.log(uname) // 5
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

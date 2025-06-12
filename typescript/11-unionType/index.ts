@@ -21,4 +21,5 @@ function printStaus(message: string, code: string | number) {
 }
 printStaus('User created', ' 200 ');
 printStaus('User created', 200);
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

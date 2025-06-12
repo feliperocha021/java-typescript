@@ -1,4 +1,5 @@
 "use strict";
+
 let person = ['John', 30]; //(string | number)[];  
 person.push('male');
 //person.push(true) error de tipagem
@@ -27,3 +28,5 @@ for (let thing of things) {
         console.log(thing); // Mark
     }
 }
+exports.default = undefined;
+// serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

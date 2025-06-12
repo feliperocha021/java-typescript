@@ -13,4 +13,5 @@ function createError(msg: string, code: number): never {
 // No consoole o greetUser ainda retorna undefined, mas o createError nunca vai retornar um valor, pois sempre lança um erro.
 console.log(greetUser("John"));
 console.log(createError("Something went wrong", 500));
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

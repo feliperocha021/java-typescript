@@ -42,4 +42,5 @@ let user: UserType = {
 }
 
 printUser(user); // Output: User: John Doe, Age: 30, Role: admin
-export {}; // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos
+export default undefined;
+ // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

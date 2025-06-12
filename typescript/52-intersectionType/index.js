@@ -1,7 +1,7 @@
 "use strict";
 
-var x = 20;
-var admin1 = {
+let x = 20;
+let admin1 = {
     name: 'jhon',
     age: 30,
     role: 'admin'
@@ -12,3 +12,4 @@ function processOrder(order) {
     console.log(order.id, order.items, order.status);
 }
 processOrder({ id: 123, items: ['item1', 'item2'], status: 'pay' });
+exports.default = undefined;
