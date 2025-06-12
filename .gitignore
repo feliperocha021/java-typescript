@@ -1,0 +1,36 @@
+# Diretório dos módulos do Node
+node_modules/
+
+# Pastas geradas pelo processo de build/transpilaçãao
+dist/
+build/
+out/
+
+# Arquivos de cache gerados pelo TypeScript (tsbuildinfo)
+*.tsbuildinfo
+
+# Arquivos de log
+logs/
+*.log
+
+# Diretórios de cobertura de testes (caso exista)
+coverage/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos e pastas do sistema (macOS, Windows, etc.)
+.DS_Store
+Thumbs.db
+
+# Configurações de editores e IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
