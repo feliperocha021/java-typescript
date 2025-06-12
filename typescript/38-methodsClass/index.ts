@@ -22,4 +22,4 @@ console.log(user1);
 console.log(user2);
 user1.greetUser('Mr');
 user2.greetUser('Mrs');
-export{};
+export default undefined;

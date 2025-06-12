@@ -7,4 +7,4 @@ button?.addEventListener('click', () => {
     console.log('clicked');
 })
 
-export{};
+export default undefined;

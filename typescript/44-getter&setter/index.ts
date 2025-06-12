@@ -26,4 +26,4 @@ class Person {
 const p1 = new Person('jhon');
 p1.age = 30;
 console.log(p1);
-export{};
+export default undefined;

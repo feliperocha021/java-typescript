@@ -6,4 +6,4 @@ function printDeatils(name: string, age: number, gender: string = 'male') {
 printDeatils('jhon', 28);
 printDeatils('jhon', 28, 'female');
 
-export{};
+export default undefined;

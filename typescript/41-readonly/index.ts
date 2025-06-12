@@ -24,4 +24,4 @@ const emp = new Employee('jhon', 10000, 'london', true, 20);
 console.log(emp);
 console.log(emp.empName);
 console.log(emp.getSalary());
-export{};
+export default undefined;

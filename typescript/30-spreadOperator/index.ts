@@ -25,4 +25,4 @@ const eemployee = {
     company: 'Google'
 }
 console.log(eemployee);
-export{};
+export default undefined;

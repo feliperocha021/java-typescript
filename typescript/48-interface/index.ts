@@ -51,4 +51,4 @@ function display(obj: User) {
 
 let adm = new Admin('jhon', 'smith');
 display(adm);
-export{};
+export default undefined;

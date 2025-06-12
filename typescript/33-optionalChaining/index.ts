@@ -23,4 +23,4 @@ for(let prod of products) {
     console.log('************************');
 }
 
-export{};
+export default undefined;

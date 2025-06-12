@@ -15,4 +15,4 @@ const c = value3 ?? 'DEFAULT'; // aqui já é possível retoorna a string vazia
 console.log(x, y, z);
 console.log(a, b, c);
 
-export{};
+export default undefined;

@@ -35,4 +35,4 @@ interface Order {
 }
 processOrder({id: 123, items: ['item1', 'item2'], status: 'pay'});
 
-export{};
+export default undefined;

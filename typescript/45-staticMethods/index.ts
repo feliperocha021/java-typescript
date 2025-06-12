@@ -21,4 +21,4 @@ let emp2 = new Employee('jhon', 'smith');
 console.log(emp2);
 console.log(Employee.count)
 console.log(Employee.sayHello());
-export{};
+export default undefined;

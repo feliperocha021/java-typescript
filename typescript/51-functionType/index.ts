@@ -19,4 +19,4 @@ interface SumFunc2 {
 let add2: SumFunc2;
 add2 = (x: number, y: number):number => x + y;
 
-export{};
+export default undefined;

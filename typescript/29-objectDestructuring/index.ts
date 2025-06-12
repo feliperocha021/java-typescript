@@ -13,4 +13,4 @@ console.log(name, city, age, gender);
 // para que ele receba uma variável com nome diferente
 const {name: pnome, age: idade} = user;
 console.log(pnome, idade);
-export{};
+export default undefined;

@@ -50,4 +50,4 @@ const emp1 = new PermanetEmployee('john', 'smith', 10000);
 const emp2 = new ContractEmployee('mark', 'vought', 7000);
 console.log(emp1.getSalary());
 console.log(emp2.getSalary());
-export{};
+export default undefined;

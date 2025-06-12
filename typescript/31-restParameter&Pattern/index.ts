@@ -16,4 +16,4 @@ function addNumbers(...numbers: number[]): number {
 addNumbers(1, 2);
 addNumbers(1, 2, 5, 7);
 
-export{};
+export default undefined;

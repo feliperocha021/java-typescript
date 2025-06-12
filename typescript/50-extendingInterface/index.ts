@@ -54,4 +54,4 @@ let adm2: Admin;
 adm2 = new Admin('mark', 'jane', 'new york')
 adm2.company = 'readonly não funciona'
 console.log(adm1, adm2, adm1.getRole());
-export{};
+export default undefined;

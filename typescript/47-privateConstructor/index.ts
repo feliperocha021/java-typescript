@@ -28,4 +28,4 @@ const person2 = Person.getInstance();
 console.log(person1.getInfo());
 console.log(person1 === person2); // true
 
-export{};
+export default undefined;

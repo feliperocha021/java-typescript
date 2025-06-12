@@ -38,4 +38,4 @@ class Employee extends Person{
 const emp = new Employee('jhon','30-08-1991', 'male', 10000, 'london', true, 20);
 console.log(emp);
 console.log(emp.getSalary());
-export{};
+export default undefined;
