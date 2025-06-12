@@ -1,4 +1,3 @@
-"use strict";
 /*
 Possui alguns recursos adcionais;
 Não pode ser executado diretamente no navegador;
@@ -7,7 +6,6 @@ Possui tipagem estática;
 Desvantagem  em relação a dupla compilação;
 Compilador do TypeScript p/ javascript: npm install typescript --save-dev
 */
-
 console.log('Hello, World!');
-exports.default = undefined;
+export default undefined;
 // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

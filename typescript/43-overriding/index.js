@@ -1,6 +1,4 @@
-"use strict";
 // protected permite que a propriedade seja acessada pelos filhos
-
 class Person {
     constructor(name, dob, gender) {
         this.name = name;
@@ -38,4 +36,4 @@ const emp = new Employee('jhon', '08-30-1991', 'male', 10000, 'london', true, 20
 console.log(emp);
 console.log(emp.getSalary());
 console.log(emp.calculateAge());
-exports.default = undefined;
+export default undefined;

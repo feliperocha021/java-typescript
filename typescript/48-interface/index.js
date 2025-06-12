@@ -1,8 +1,6 @@
-"use strict";
 // Interface atua como um contrato que define a estrutura
 // de um objeto e reforça a segurança de tipo
 // não tem constructor e não pode ser instanciado
-
 let user1 = {
     firstname: 'jhon',
     lastname: 'smith',
@@ -31,4 +29,4 @@ function display(obj) {
 }
 let adm = new Admin('jhon', 'smith');
 display(adm);
-exports.default = undefined;
+export default undefined;

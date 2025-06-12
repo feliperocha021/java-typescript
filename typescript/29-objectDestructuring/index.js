@@ -1,5 +1,3 @@
-"use strict";
-
 const user = {
     name: 'Jhon',
     age: 28,
@@ -13,4 +11,4 @@ console.log(name, city, age, gender);
 // para que ele receba uma variável com nome diferente
 const { name: pnome, age: idade } = user;
 console.log(pnome, idade);
-exports.default = undefined;
+export default undefined;

@@ -1,5 +1,3 @@
-"use strict";
-
 let person = {
     name: "John",
     age: 30
@@ -31,5 +29,5 @@ let person5 = {
 console.log(person5.address.city); // New York
 console.log(person5['address']['city']); // New York
 // console.log(person5['0']['city']) // error
-exports.default = undefined;
+export default undefined;
 // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

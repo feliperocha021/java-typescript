@@ -1,4 +1,3 @@
-"use strict";
 /*
 permite acesso seguro a propriedades aninhadas e chamadas
 em objetos potencionalmente nulos ou indefinidos
@@ -11,7 +10,6 @@ Exemplo: const value = obj.first?.second?.third;
 
 */
 var _a;
-
 const products = [
     { name: 'iPhone', price: 11000, details: { color: 'black', ram: 8 } },
     { name: 'T-Shiryt', price: 120, details: { color: 'red', size: 32 } },
@@ -23,4 +21,4 @@ for (let prod of products) {
     console.log(`Color: ${(_a = prod.details) === null || _a === void 0 ? void 0 : _a.color}`); // avalia se o lado esquerdo da expressão é null ou undefined e caso seja retorna undefined, sem usar o operador ? daria erro de compilação
     console.log('************************');
 }
-exports.default = undefined;
+export default undefined;

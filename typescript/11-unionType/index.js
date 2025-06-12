@@ -1,6 +1,4 @@
-"use strict";
 // Usado para especificar que um parâmetro de função pode ser de mais de um tipo ou o retorno pode ser um dos vários tipos	
-
 let user;
 function getUser() {
     const uname = 'John Doe';
@@ -19,5 +17,5 @@ function printStaus(message, code) {
 }
 printStaus('User created', ' 200 ');
 printStaus('User created', 200);
-exports.default = undefined;
+export default undefined;
 // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

@@ -1,5 +1,3 @@
-"use strict";
-
 let x = 20;
 let admin1 = {
     name: 'jhon',
@@ -12,4 +10,4 @@ function processOrder(order) {
     console.log(order.id, order.items, order.status);
 }
 processOrder({ id: 123, items: ['item1', 'item2'], status: 'pay' });
-exports.default = undefined;
+export default undefined;

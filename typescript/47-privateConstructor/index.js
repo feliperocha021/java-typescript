@@ -1,5 +1,3 @@
-"use strict";
-
 // por padrão o constructor é public
 // torna-lo privado impede que a classe seja instanciada diretamente fora dela mesma.
 // garanti que só exista uma única instância da classe.
@@ -22,4 +20,4 @@ const person1 = Person.getInstance();
 const person2 = Person.getInstance();
 console.log(person1.getInfo());
 console.log(person1 === person2); // true
-exports.default = undefined;
+export default undefined;

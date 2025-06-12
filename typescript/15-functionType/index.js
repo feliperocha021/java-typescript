@@ -1,5 +1,3 @@
-"use strict";
-
 function greetUser(user) {
     const msg = `Name: ${user.name}, Age: ${user.age}`;
     console.log(msg);
@@ -28,5 +26,5 @@ greet2 = isEligible;
 greet3 = isEligible; // greet3 agora também é do tipo isEligible
 greet2(user); // true
 greet3(user); // true
-exports.default = undefined;
+export default undefined;
 // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

@@ -1,5 +1,3 @@
-"use strict";
-
 function printStaus(message, code) {
     if (typeof code === 'string') { /* é necessário, pois number não possuir a função trim() */
         console.log(`${message}. Status code: ${code.trim()}`);
@@ -35,5 +33,5 @@ let user = {
     role: 'admin'
 };
 printUser(user); // Output: User: John Doe, Age: 30, Role: admin
-exports.default = undefined;
+export default undefined;
 // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

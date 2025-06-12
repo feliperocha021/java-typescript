@@ -1,6 +1,4 @@
-"use strict";
 // static faz com que funções e propriedades não sejam acessadas por instancias e sim pela própria classe
-
 class Employee {
     constructor(firstName, lastName) {
         this.firstName = firstName;
@@ -20,4 +18,4 @@ let emp2 = new Employee('jhon', 'smith');
 console.log(emp2);
 console.log(Employee.count);
 console.log(Employee.sayHello());
-exports.default = undefined;
+export default undefined;

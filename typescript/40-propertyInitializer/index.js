@@ -1,5 +1,3 @@
-"use strict";
-
 // podemos criar as prorpiedades de uma classe dentro do constructor
 class Employee {
     // empName: string
@@ -32,4 +30,4 @@ class Employee {
 const emp = new Employee('jhon', 10000, 'london', true, 20);
 console.log(emp);
 console.log(emp.getSalary());
-exports.default = undefined;
+export default undefined;

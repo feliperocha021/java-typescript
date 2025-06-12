@@ -1,5 +1,3 @@
-"use strict";
-
 const str1 = 'hello world';
 const str2 = "hello world";
 const str3 = `hello
@@ -14,5 +12,5 @@ console.log(Boolean('')); // false
 console.log(Boolean(' ')); // true
 let isGreater = 10 > 5; // true
 console.log(isGreater);
-exports.default = undefined;
+export default undefined;
 // serve para que o compilador não reclame de redeclaração de uma mesma váriavel em vários arquivos

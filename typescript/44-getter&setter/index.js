@@ -1,6 +1,4 @@
-"use strict";
 // o _ é apanas uma convenção para indicar que a  propriedade é privada
-
 class Person {
     constructor(name, _age = null) {
         this.name = name;
@@ -24,4 +22,4 @@ class Person {
 const p1 = new Person('jhon');
 p1.age = 30;
 console.log(p1);
-exports.default = undefined;
+export default undefined;

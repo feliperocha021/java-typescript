@@ -1,8 +1,6 @@
-"use strict";
 // Interface atua como um contrato que define a estrutura
 // de um objeto e reforça a segurança de tipo
 // não tem constructor e não pode ser instanciado
-
 class Admin {
     constructor(f, l, lo) {
         this.company = 'microsoft';
@@ -29,4 +27,4 @@ let adm2;
 adm2 = new Admin('mark', 'jane', 'new york');
 adm2.company = 'readonly não funciona';
 console.log(adm1, adm2, adm1.getRole());
-exports.default = undefined;
+export default undefined;

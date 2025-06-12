@@ -1,5 +1,3 @@
-"use strict";
-
 class User {
     constructor(n, a, g) {
         this.name = n;
@@ -18,4 +16,4 @@ console.log(user1);
 console.log(user2);
 user1.greetUser('Mr');
 user2.greetUser('Mrs');
-exports.default = undefined;
+export default undefined;

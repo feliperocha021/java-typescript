@@ -1,7 +1,5 @@
-"use strict";
 // rest pattern empacota uma lista de valores em um único array
 // sempre é utilizado antes da atribuição
-
 let [a, b, ...rest] = [1, 2, 3, 4, 5, 6, 7];
 console.log(rest);
 function addNumbers(...numbers) {
@@ -14,4 +12,4 @@ function addNumbers(...numbers) {
 }
 addNumbers(1, 2);
 addNumbers(1, 2, 5, 7);
-exports.default = undefined;
+export default undefined;

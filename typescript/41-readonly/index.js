@@ -1,5 +1,3 @@
-"use strict";
-
 // seu valor é definido uma vez e não pode ser alterado
 class Employee {
     constructor(empName, salary, baseLocation, isEligible, hikePercent) {
@@ -23,4 +21,4 @@ const emp = new Employee('jhon', 10000, 'london', true, 20);
 console.log(emp);
 console.log(emp.empName);
 console.log(emp.getSalary());
-exports.default = undefined;
+export default undefined;
