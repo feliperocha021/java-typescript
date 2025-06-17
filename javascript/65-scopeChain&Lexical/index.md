@@ -1,0 +1,1 @@
+**Lexical Scope**: A maneira como as variáveis são organizadas e acessadas é inteiramente controlada pelo posicionamento da função e do bloco. Ou seja uma função criada dentro de outra função terá acesso a todos os escopos pais dela. Veja o exemplo em index.js
