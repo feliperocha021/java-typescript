@@ -1,4 +1,3 @@
-// 69
 // type casting pode usar tanto o 'as' quanto o '<>'
 const expType = document.getElementById('expense-type')! as HTMLSelectElement;
 const expDesc = <HTMLInputElement>document.getElementById('desc')!;
@@ -7,7 +6,10 @@ const addExpBtn = document.querySelector('.add-expense-btn')! as HTMLButtonEleme
 
 const debitDiv = document.querySelector('.expense-debit-item-container')! as HTMLDivElement;
 const creditDiv = document.querySelector('.expense-credit-item-container')! as HTMLDivElement;
+const totalAmtDiv = document.querySelector('.total-expense-amount')! as HTMLDivElement;
 let expenseItems: Expense[] = [];
+
+let totalAmount = 0;
 
 class Expense {
     private static currentId: number = 0
@@ -38,12 +40,22 @@ function displayExpenseItems() {
                 <div class="exp-desc">${expItem.description}</div>
                 <div class="exp-amt">${expItem.amount}</div>
                 <div class="exp-delete">
-                    <button class="delete-expense">X</button>
+                    <button class="delete-expense" onclick="deleteExpense(${expItem.id})">X</button>
                 </div>
             </div>
         `;
         containerDiv.insertAdjacentHTML('beforeend', template);
     }
+}
+
+function calculateTotal() {
+    return expenseItems.reduce((total, exp) => {
+        return exp.type === 'credit' ?  total + exp.amount : total - exp.amount;
+    }, 0)
+}
+
+function showTotal() {
+    totalAmtDiv.textContent = 'Aval. Balance: ' + totalAmount.toString();
 }
 
 addExpBtn.addEventListener('click', (event) => {
@@ -52,6 +64,25 @@ addExpBtn.addEventListener('click', (event) => {
     const exp = new Expense(type, expDesc.value, Number(expAmt.value));
     expenseItems.push(exp);
     displayExpenseItems();
+
+    totalAmount = calculateTotal();
+    showTotal();
 })
 
+function deleteExpense(id: number) {
+    const exp = expenseItems.find((el) => {
+        return el.id === id;
+    }) as Expense
+    let index: number = expenseItems.indexOf(exp)
+    expenseItems.splice(index, 1);
+    displayExpenseItems();
+    updateBalance(exp);
+}
+
+function updateBalance(expense: Expense) {
+    totalAmount = expense.type === 'credit' ? totalAmount - expense.amount : totalAmount + expense.amount;
+    showTotal();
+}
+
+(window as any).deleteExpense = deleteExpense;
 export default undefined
