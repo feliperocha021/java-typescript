@@ -22,6 +22,7 @@ coverage/
 .env.development.local
 .env.test.local
 .env.production.local
+.editorconfig
 
 # Arquivos e pastas do sistema (macOS, Windows, etc.)
 .DS_Store
