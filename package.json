@@ -1,5 +1,12 @@
 {
+  "name": "java-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack serve --mode development"
+  },
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
     "webpack": "^5.99.9",

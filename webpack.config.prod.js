@@ -1,14 +1,13 @@
 const path = require('path');
+const CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: path.resolve(__dirname, 'typescript', 'de88a93-webpack', 'index.ts'), // arquivo que deve ser executado primeiro
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'typescript', 'de88a93-webpack', 'dist'),
-    publicPath: '/dist/' // procurar o arquivo empacotado nesse caminho
   },
-  devtool: 'inline-source-map',
   module: {
     rules: [      /* Especifica o que fazer com oos arquivos, como imagens, css, etc*/
       {
@@ -27,5 +26,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js']
-  }
+  },
+  plugins: [
+    new CleanPlugin.CleanWebpackPlugin()
+  ]
 }
